@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_) => WeatherProvider(),
+      create: (_) => WeatherProvider()..loadWeather(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Weather Forecast',

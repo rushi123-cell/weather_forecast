@@ -24,6 +24,7 @@ class WeatherProvider with ChangeNotifier {
 
     try {
       _weatherModel = await _weatherService.fetchWeather(city);
+      cachedWeather(_weatherModel!);
     } catch (error) {
       _errormsg = errormsg.toString();
       _weatherModel = null;

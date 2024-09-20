@@ -16,12 +16,12 @@ class WeatherModel {
 
   factory WeatherModel.fromJson(Map<String, dynamic> json) {
     return WeatherModel(
-      temp: json['main']['temp'],
-      cityname: json['name'],
-      description: json['weather'][0]['description'],
-      icon: json['weather'][0]['icon'],
-      wind: json['wind']['speed'],
-      humidity: json['main']['humidity'],
+      temp: json['list'][0]['main']['temp'],
+      cityname: json['list'][0]['name'],
+      description: json['list'][0]['weather'][0]['description'],
+      icon: json['list'][0]['weather'][0]['icon'],
+      wind: json['list'][0]['wind']['speed'],
+      humidity: json['list'][0]['main']['humidity'],
     );
   }
 

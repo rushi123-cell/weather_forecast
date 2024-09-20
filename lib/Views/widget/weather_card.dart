@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:weather_practical/Model/Weather_model.dart';
 
 class WeatherCard extends StatelessWidget {
-  // final WeatherModel weatherModel;
   String? cityname;
-  String? temp;
+  double? temp;
   String? description;
   String? wind;
   String? humidity;

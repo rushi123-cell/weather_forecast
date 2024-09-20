@@ -78,7 +78,7 @@ class WeatherScreen extends StatelessWidget {
                       ? WeatherCard(
                           cityname:
                               weatherProvider.weatherModel?.cityname.toString(),
-                          temp: weatherProvider.weatherModel?.temp.toString(),
+                          temp: weatherProvider.weatherModel?.temp,
                           description: weatherProvider.weatherModel?.description
                               .toString(),
                           icon: weatherProvider.weatherModel?.icon.toString(),
